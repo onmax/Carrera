@@ -47,6 +47,7 @@ public static class Decrementador extends Thread {
 public static void main(String [] args) throws InterruptedException {
 	Thread t1=new Incrementador();
 	Thread t2=new Decrementador();
+	System.out.println("FEOOO!");
 	t1.start();
 	t2.start();
 	t1.join();
